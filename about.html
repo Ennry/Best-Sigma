@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="he-IL" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-noto-sans-hebrew text-primary">
+
+    <!-- Navigation -->
+
+    <header class="bg-main">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="flex items-center space-x-6 md:space-x-8">
+                <a href="#footer">
+                    <button
+                        class="text-base md:text-xl text-black font-semibold bg-button box-shadow-light hover:bg-button/80 transition duration-300 rounded-full px-6 md:px-10 py-2">
+                        צור קשר
+                    </button>
+                </a>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-black focus:outline-none">
+                    <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="hidden md:flex items-center">
+                <ul class="flex items-center md:space-x-12 text-2xl">
+                    <li class="hover:underline-nav"><a href="about">מי אנחנו</a></li>
+                    <li class="hover:underline-nav"><a href="index">דף הבית</a></li>
+                    <li><a href="index"><img class="h-28" src="imgs/logo.png" alt="Best Sigma"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden">
+            <ul class="flex flex-col items-center space-y-6 text-2xl p-4 bg-main animate-fade-in-down">
+                <li class="hover:underline-nav transition duration-300"><a href="index">דף הבית</a></li>
+                <li class="hover:underline-nav transition duration-300"><a href="about">מי אנחנו</a></li>
+                <li><a href="index"><img class="h-28 mt-2" src="imgs/logo.png" alt="Best Sigma"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        @keyframes fade-in-down {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-down {
+            animation: fade-in-down 0.3s ease-out;
+        }
+    </style>
+
+    <!-- Hero -->
+
+    <section class="container mx-auto p-4">
+        <div class="flex flex-col justify-center items-center py-6 text-center">
+            <h1 class="text-4xl font-semibold mb-6" dir="rtl">נעים להכיר,</h1>
+            <img src="imgs/WhatsApp Image 2023-07-27 at 11.48 2.png" alt="Company picture">
+            <p class="mt-1 text-lg max-w-2xl">בסט סיגמא הוקמה על ידי יאן ברונפמן ואלדר פורטנוב, החזון של החברה היא לעזור
+                לאנשים ולתת מענה אישי ואיכותי בתחום פרישה, מיסוי ופיננסים, תוך דגש על התאמה אישית לצרכים הפיננסיים של כל
+                לקוח. החברה מאמינה בשילוב של ידע מקצועי ובניית יחסים אמינים עם הלקוחות, כדי להבטיח תמיכה מקסימלית בהגשת
+                הפתרונות המתאימים לצרכיהם הפרטיים של כול לקוחותינו
+            </p>
+            <p class="font-bold underline mt-10">החברה מפעילה צוות של מומחים בתחום הפרישה והפנסיה, שיכולים לספק ליווי
+                מעמיק ומקצועי ללקוחותיה</p>
+        </div>
+    </section>
+
+
+    <!-- Gallery -->
+
+    <section class="container mx-auto p-4">
+        <div class="flex flex-col justify-center items-center py-6">
+            <h2 class="uppercase font-bold text-3xl mb-6">we are the best</h2>
+            <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 items-center justify-center">
+                <div class="w-full h-full">
+                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-30 at 10.03 1.png" alt="Company picture">
+                </div>
+
+                <div class="w-full h-full">
+                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-27 at 11.48 2.png" alt="Company picture">
+                </div>
+
+                <div class="w-full h-full">
+                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-27 at 11.46 1.png" alt="Company picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="h-auto w-full bg-secondary p-4 py-12">
+
+        <div class="container mx-auto bg-modal rounded-2xl px-4">
+            <div class="flex flex-col items-center justify-center">
+                <h4 class="text-center text-primary text-4xl font-bold mb-6 mt-6">צור קשר</h4>
+                <a href="index"><img class="w-36 h-36" src="imgs/rounded-logo.png" alt="Best Sigma"></a>
+            </div>
+
+
+            <div class="flex items-center justify-center py-6 text-right" dir="rtl">
+                <div class="mx-auto w-full max-w-[550px]">
+                    <form action="#" method="POST">
+                        <div class="mb-5">
+                            <label for="name" class="mb-3 block text-base font-semibold text-primary">
+                                שם מלא
+                            </label>
+                            <input type="text" name="name" id="name" placeholder="שם מלא" required
+                                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="mb-3 block text-base font-semibold text-primary">
+                                כתובת מייל
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="example@domain.com" dir="ltr"
+                                required
+                                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
+                        </div>
+                        <div class="mb-5">
+                            <label for="tel" class="mb-3 block text-base font-semibold text-primary">
+                                מספר טלפון
+                            </label>
+                            <input type="tel" name="tel" id="tel" placeholder="**********" dir="ltr" required
+                                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
+                        </div>
+                        <div class="mb-5">
+                            <label for="subject" class="mb-3 block text-base font-semibold text-primary">
+                                נושא
+                            </label>
+                            <input type="text" name="subject" id="subject" placeholder="נושא"
+                                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="mb-3 block text-base font-semibold text-primary">
+                                הודעה
+                            </label>
+                            <textarea rows="4" name="message" id="message" placeholder="כתוב הודעה"
+                                class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md"></textarea>
+                        </div>
+                        <div>
+                            <button
+                                class="hover:shadow-form rounded-md bg-button hover:bg-button/80 transition duration-300 py-3 px-8 text-base font-semibold text-white outline-none">
+                                שליחה
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info -->
+
+        <div class="flex flex-col items-center justify-center text-center mt-10 md:mt-20 space-y-4">
+            <div class="flex space-x-2">
+                <a href="tel:+972524455544"><span>052-4455544</span></a>
+
+                <a href="tel:+972524455544"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                            clip-rule="evenodd" />
+                    </svg></a>
+            </div>
+
+            <div class="flex space-x-2">
+
+                <a target="_blank"
+                    href="https://www.waze.com/he/live-map/directions/%D7%9E%D7%92%D7%93%D7%9C-%D7%99%D7%A8%D7%95%D7%9F-%D7%9E%D7%99%D7%9C%D7%A8-%D7%94%D7%94%D7%92%D7%A0%D7%94-13-%D7%A8%D7%90%D7%A9%D7%95%D7%9F-%D7%9C%D7%A6%D7%99%D7%95%D7%9F?to=place.w.22806848.227806335.414456">
+                    <address>רחוב ההגנה 13, ראשון לציון, מגדל ירון מילר</address>
+                </a>
+
+
+                <a target="_blank"
+                    href="https://www.waze.com/he/live-map/directions/%D7%9E%D7%92%D7%93%D7%9C-%D7%99%D7%A8%D7%95%D7%9F-%D7%9E%D7%99%D7%9C%D7%A8-%D7%94%D7%94%D7%92%D7%A0%D7%94-13-%D7%A8%D7%90%D7%A9%D7%95%D7%9F-%D7%9C%D7%A6%D7%99%D7%95%D7%9F?to=place.w.22806848.227806335.414456">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="flex space-x-2">
+
+                <span>17:00-09:00 'א'-ה</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+
+            <!-- Coder -->
+
+            <a class="underline font-semibold" href="https://www.linkedin.com/in/ennrywr/" dir="rtl">אתה זה נבנה על ידי
+                - Ennry בנייה, פיתוח וקידום אתרים</a>
+        </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
