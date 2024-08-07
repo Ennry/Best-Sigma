@@ -20,10 +20,11 @@
             <div class="flex items-center space-x-6 md:space-x-8">
                 <a href="#footer">
                     <button
-                        class="text-base md:text-xl text-black font-semibold bg-button box-shadow-light hover:bg-button/80 transition duration-300 rounded-full px-6 md:px-10 py-2">
+                        class="contact text-base md:text-xl text-black font-semibold bg-button box-shadow-light hover:bg-button/80 transition duration-300 rounded-full px-6 md:px-10 py-2">
                         צור קשר
                     </button>
                 </a>
+                <img class="hidden md:block lang cursor-pointer w-10 h-10" src="imgs/russian.png" alt="">
             </div>
 
             <!-- Mobile Navigation -->
@@ -44,8 +45,8 @@
 
             <nav class="hidden md:flex items-center">
                 <ul class="flex items-center md:space-x-12 text-2xl">
-                    <li class="hover:underline-nav"><a href="about">מי אנחנו</a></li>
-                    <li class="hover:underline-nav"><a href="index">דף הבית</a></li>
+                    <li class="hover:underline-nav"><a class="about" href="about">מי אנחנו</a></li>
+                    <li class="hover:underline-nav"><a class="home" href="index">דף הבית</a></li>
                     <li><a href="index"><img class="h-28" src="imgs/logo.png" alt="Best Sigma"></a></li>
                 </ul>
             </nav>
@@ -54,12 +55,15 @@
         <!-- Mobile Menu -->
         <nav id="mobile-menu" class="hidden md:hidden">
             <ul class="flex flex-col items-center space-y-6 text-2xl p-4 bg-main animate-fade-in-down">
-                <li class="hover:underline-nav transition duration-300"><a href="index">דף הבית</a></li>
-                <li class="hover:underline-nav transition duration-300"><a href="about">מי אנחנו</a></li>
+                <li class="hover:underline-nav transition duration-300"><a class="home" href="index">דף הבית</a></li>
+                <li class="hover:underline-nav transition duration-300"><a class="about" href="about">מי אנחנו</a></li>
+                <li><img class="lang cursor-pointer w-10 h-10" src="imgs/russian.png" alt=""></li>
                 <li><a href="index"><img class="h-28 mt-2" src="imgs/logo.png" alt="Best Sigma"></a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- mobile menu transition effect -->
 
     <style>
         @keyframes fade-in-down {
@@ -83,14 +87,16 @@
 
     <section class="container mx-auto p-4">
         <div class="flex flex-col justify-center items-center py-6 text-center">
-            <h1 class="text-4xl font-semibold mb-6" dir="rtl">נעים להכיר,</h1>
+            <h1 class="meet text-4xl font-semibold mb-6" dir="rtl">נעים להכיר,</h1>
             <img src="imgs/WhatsApp Image 2023-07-27 at 11.48 2.png" alt="Company picture">
-            <p class="mt-1 text-lg max-w-2xl">בסט סיגמא הוקמה על ידי יאן ברונפמן ואלדר פורטנוב, החזון של החברה היא לעזור
+            <p class="meetDescription mt-1 text-lg max-w-2xl">בסט סיגמא הוקמה על ידי יאן ברונפמן ואלדר פורטנוב, החזון של
+                החברה היא לעזור
                 לאנשים ולתת מענה אישי ואיכותי בתחום פרישה, מיסוי ופיננסים, תוך דגש על התאמה אישית לצרכים הפיננסיים של כל
                 לקוח. החברה מאמינה בשילוב של ידע מקצועי ובניית יחסים אמינים עם הלקוחות, כדי להבטיח תמיכה מקסימלית בהגשת
                 הפתרונות המתאימים לצרכיהם הפרטיים של כול לקוחותינו
             </p>
-            <p class="font-bold underline mt-10">החברה מפעילה צוות של מומחים בתחום הפרישה והפנסיה, שיכולים לספק ליווי
+            <p class="company font-bold underline mt-10">החברה מפעילה צוות של מומחים בתחום הפרישה והפנסיה, שיכולים לספק
+                ליווי
                 מעמיק ומקצועי ללקוחותיה</p>
         </div>
     </section>
@@ -103,15 +109,18 @@
             <h2 class="uppercase font-bold text-3xl mb-6">we are the best</h2>
             <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 items-center justify-center">
                 <div class="w-full h-full">
-                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-30 at 10.03 1.png" alt="Company picture">
+                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-30 at 10.03 1.png"
+                        alt="Company picture">
                 </div>
 
                 <div class="w-full h-full">
-                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-27 at 11.48 2.png" alt="Company picture">
+                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-27 at 11.48 2.png"
+                        alt="Company picture">
                 </div>
 
                 <div class="w-full h-full">
-                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-27 at 11.46 1.png" alt="Company picture">
+                    <img class="w-full h-auto" src="imgs/WhatsApp Image 2023-07-27 at 11.46 1.png"
+                        alt="Company picture">
                 </div>
             </div>
         </div>
@@ -123,23 +132,22 @@
 
         <div class="container mx-auto bg-modal rounded-2xl px-4">
             <div class="flex flex-col items-center justify-center">
-                <h4 class="text-center text-primary text-4xl font-bold mb-6 mt-6">צור קשר</h4>
+                <h4 class="contact text-center text-primary text-4xl font-bold mb-6 mt-6">צור קשר</h4>
                 <a href="index"><img class="w-36 h-36" src="imgs/rounded-logo.png" alt="Best Sigma"></a>
             </div>
 
-
             <div class="flex items-center justify-center py-6 text-right" dir="rtl">
                 <div class="mx-auto w-full max-w-[550px]">
-                    <form action="#" method="POST">
+                    <form action="#" method="POST" class="alignment" dir="auto">
                         <div class="mb-5">
-                            <label for="name" class="mb-3 block text-base font-semibold text-primary">
+                            <label for="name" class="mb-3 block text-base font-semibold text-primary name">
                                 שם מלא
                             </label>
                             <input type="text" name="name" id="name" placeholder="שם מלא" required
                                 class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
                         </div>
                         <div class="mb-5">
-                            <label for="email" class="mb-3 block text-base font-semibold text-primary">
+                            <label for="email" class="mb-3 block text-base font-semibold text-primary mail">
                                 כתובת מייל
                             </label>
                             <input type="email" name="email" id="email" placeholder="example@domain.com" dir="ltr"
@@ -147,21 +155,21 @@
                                 class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
                         </div>
                         <div class="mb-5">
-                            <label for="tel" class="mb-3 block text-base font-semibold text-primary">
+                            <label for="tel" class="mb-3 block text-base font-semibold text-primary phone">
                                 מספר טלפון
                             </label>
                             <input type="tel" name="tel" id="tel" placeholder="**********" dir="ltr" required
                                 class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
                         </div>
                         <div class="mb-5">
-                            <label for="subject" class="mb-3 block text-base font-semibold text-primary">
+                            <label for="subject" class="mb-3 block text-base font-semibold text-primary subject">
                                 נושא
                             </label>
                             <input type="text" name="subject" id="subject" placeholder="נושא"
                                 class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-semibold text-[#6B7280] outline-none focus:shadow-md" />
                         </div>
                         <div class="mb-5">
-                            <label for="message" class="mb-3 block text-base font-semibold text-primary">
+                            <label for="message" class="mb-3 block text-base font-semibold text-primary message">
                                 הודעה
                             </label>
                             <textarea rows="4" name="message" id="message" placeholder="כתוב הודעה"
@@ -169,7 +177,7 @@
                         </div>
                         <div>
                             <button
-                                class="hover:shadow-form rounded-md bg-button hover:bg-button/80 transition duration-300 py-3 px-8 text-base font-semibold text-white outline-none">
+                                class="hover:shadow-form rounded-md bg-button hover:bg-button/80 transition duration-300 py-3 px-8 text-base font-semibold text-white outline-none send">
                                 שליחה
                             </button>
                         </div>
@@ -194,9 +202,9 @@
 
             <div class="flex space-x-2">
 
-                <a target="_blank"
+                <a class="location" target="_blank"
                     href="https://www.waze.com/he/live-map/directions/%D7%9E%D7%92%D7%93%D7%9C-%D7%99%D7%A8%D7%95%D7%9F-%D7%9E%D7%99%D7%9C%D7%A8-%D7%94%D7%94%D7%92%D7%A0%D7%94-13-%D7%A8%D7%90%D7%A9%D7%95%D7%9F-%D7%9C%D7%A6%D7%99%D7%95%D7%9F?to=place.w.22806848.227806335.414456">
-                    <address>רחוב ההגנה 13, ראשון לציון, מגדל ירון מילר</address>
+                    <address class="address">רחוב ההגנה 13, ראשון לציון, מגדל ירון מילר</address>
                 </a>
 
 
@@ -212,7 +220,7 @@
 
             <div class="flex space-x-2">
 
-                <span>17:00-09:00 'א'-ה</span>
+                <span class="hours">17:00-09:00 'א'-ה</span>
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                     <path fill-rule="evenodd"
@@ -223,9 +231,10 @@
 
             <!-- Coder -->
 
-            <a class="underline font-semibold" href="https://www.linkedin.com/in/ennrywr/" dir="rtl">אתה זה נבנה על ידי
+            <a class="coder underline font-semibold" href="https://www.linkedin.com/in/ennrywr/" dir="rtl">אתה זה נבנה על ידי
                 - Ennry בנייה, פיתוח וקידום אתרים</a>
         </div>
+
         </div>
     </footer>
     <script src="script.js"></script>
